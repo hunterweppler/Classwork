@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Friday project/Friday project.iml" filepath="$PROJECT_DIR$/Friday project/Friday project.iml" />
       <module fileurl="file://$PROJECT_DIR$/HW.iml" filepath="$PROJECT_DIR$/HW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pet Class/Pet Class.iml" filepath="$PROJECT_DIR$/Pet Class/Pet Class.iml" />
     </modules>
   </component>
 </project>

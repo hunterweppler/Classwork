@@ -1,0 +1,2 @@
+public class FridayWeek3 {
+}

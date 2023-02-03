@@ -1,27 +1,20 @@
-import java.util.Scanner;
 
 public class HW2 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Input a Int or Q to quit ");
-        String userTyped;
-        int number = 0;
-        Boolean done = false;
-        int counter = 0;
-        if (number > 10 && number < 15){
-            counter++;
-            System.out.println();
-
-            userTyped = input.next();
-            if (userTyped.equals("Q")) done = true; // NOTICE the .equals()
-            else
-            {
-                number += userTyped.length();
+    public static int number(int x) {
+        System.out.println();
+        return 0;
+    }
+    public static int countfunc(int num){
+        int count = 0;
+        for (int i = 0; i < 100; i++){
+            if (i % num == 0) {
+                count++;
             }
         }
-        while (!done);
-
-        System.out.println("sum = " + number + " count = ");
-        }
-
+        return count;
     }
+
+    public static void main(String[] args) {
+        System.out.println(countfunc(5));
+    }
+}
