@@ -1,22 +1,20 @@
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Random;
 
 public class HW1 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        String userTyped; 	boolean done = false;
-        int sum = 0;
-        do
-        {
-            System.out.print("Input an word (Q to quit): ");
-            userTyped = input.next();
-            if (userTyped.equals("Q")) done = true; // NOTICE the .equals()
-            else
-            {
-                sum += userTyped.length();
-            }
-        }
-        while (!done);
+    public static int[] createArray(int size) {
+        int[] numbers = new int[size];
+        Random randomGenerator = new Random();
+        int top = 20, bottom = 10;
 
-        System.out.println("sum = " + sum + " count = ");
+        for (int index = 0; index < size; index++) {
+            numbers[index] = randomGenerator.nextInt(top - bottom) + bottom;
+        }
+        return numbers;
+    }
+
+    public static void main(String[] args) {
+        int[] myArray = createArray(5);
+        System.out.println(Arrays.toString(myArray));
     }
 }
