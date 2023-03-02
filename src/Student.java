@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class Student {
     private String name;
     private int ID;
@@ -20,6 +21,7 @@ public class Student {
         System.out.println(result);
         return result;
     }
+    ArrayList<Course> CourseList = new ArrayList<>();
 
     public static void main(String[] args) {
         Student Max1 = new Student(" Max1 ",141);
